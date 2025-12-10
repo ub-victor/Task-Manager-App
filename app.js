@@ -1,6 +1,6 @@
 const express = require ('express');
 const app = express();
-const routes = require('./routes/tasks');
+const tasks = require('./routes/tasks');
 
 
 
@@ -14,6 +14,8 @@ app.get('/hello',(req, res)=>{
 // app.get('/api/v1/tasks/:id') -- get a a single task
 // app.patch('/api/v1/tasks') -- update tasks
 // app.delete('/api/v1/tasks/:id') -- delete task
+
+app.use('/api/v1/tasks', tasks)
 
 
 

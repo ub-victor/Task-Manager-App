@@ -9,7 +9,7 @@ app.get('/hello',(req, res)=>{
 })
 
 // app.get(/api/v1/tasks) -- get all the tasks
-// app.get(/api/v1/tasks) -- get all the tasks
+// app.post(/api/v1/tasks) -- create a new task
 
 
 

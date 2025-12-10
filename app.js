@@ -2,7 +2,8 @@ const express = require ('express');
 const app = express();
 const tasks = require('./routes/tasks');
 
-
+// midlleware
+app.use(express.json());// to parse json data, it allows us to access req.body
 
 //routes
 app.get('/hello',(req, res)=>{

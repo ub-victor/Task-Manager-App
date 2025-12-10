@@ -12,6 +12,7 @@ app.get('/hello',(req, res)=>{
 // app.post('/api/v1/tasks') -- create a new task
 // app.get('/api/v1/tasks/:id') -- get a a single task
 // app.patch('/api/v1/tasks') -- update tasks
+// app.delete('/api/v1/tasks/:id') -- delete task
 
 
 

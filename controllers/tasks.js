@@ -11,11 +11,11 @@ const getTask = (req, res)=>{
 }
 
 const updateTask = (req, res)=>{
-    res.send('update task')
+    res.json({id:req.params.id})
 }
 
 const deleteTask = (req, res)=>{
-    res.send('delete a task')
+    res.json({id:req.params.id})
 }
 
 

@@ -1,6 +1,7 @@
 const express = require ('express');
 const app = express();
 const connectDB = require('./db/connect');
+require('dotenv');
 const tasks = require('./routes/tasks');
 
 // midlleware

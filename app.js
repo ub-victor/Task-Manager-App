@@ -1,5 +1,6 @@
 const express = require ('express');
 const app = express();
+require('./db/connect');
 const tasks = require('./routes/tasks');
 
 // midlleware

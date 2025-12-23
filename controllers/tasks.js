@@ -6,7 +6,7 @@ const getAllTasks = (req, res)=>{
 
 const createTask = async (req, res)=>{
     const task = await Task.create(req.body)
-    res.json(req.body)
+    res.status(200).json(req.body)
 }
 
 const getTask = (req, res)=>{

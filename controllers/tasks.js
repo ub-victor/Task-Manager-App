@@ -7,7 +7,6 @@ const getAllTasks = async (req, res)=>{
     } catch(error){
 
     }
-    res.
 }
 
 const createTask = async (req, res)=>{

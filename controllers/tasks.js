@@ -31,7 +31,7 @@ const getTask = async (req, res)=>{
         }
         res.status(200).json({task})
     } catch{
-        res.status(500).json({ msg: error})
+        res.status(500).json({ msg: error.message})
     }
 }
 

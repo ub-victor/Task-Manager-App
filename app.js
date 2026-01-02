@@ -20,6 +20,7 @@ app.get('/hello',(req, res)=>{
 
 app.use('/api/v1/tasks', tasks)
 
+const port = 3000;
 
 const start = async () => {
     try{
@@ -33,6 +34,4 @@ const start = async () => {
 }
 
 start();
-
-const port = 3000;
 

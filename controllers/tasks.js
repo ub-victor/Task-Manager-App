@@ -24,7 +24,7 @@ const createTask = async (req, res)=>{
 const getTask = async (req, res)=>{
     try{
         const { id:taskID} = req.params
-        const task = await Trask.findOne({_id:taskID});
+        const task = await Task.findOne({_id:taskID});
         if(!task){
             return res.status(404).json({msg: `No task with id ${taskID}`});
         }

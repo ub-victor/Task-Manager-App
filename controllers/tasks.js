@@ -23,6 +23,7 @@ const createTask = async (req, res)=>{
 
 const getTask = async (req, res)=>{
     try{
+        // const taskID = req.params.id
         const { id:taskID} = req.params
         const task = await Task.findOne({_id:taskID});
         if(!task){

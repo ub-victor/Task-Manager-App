@@ -47,7 +47,7 @@ const updateTask = (req, res)=>{
 }
 
 const deleteTask = (req, res)=>{
-    res.json({id:req.params.id})
+    
 }
 
 

@@ -46,7 +46,13 @@ const updateTask = (req, res)=>{
     res.json({id:req.params.id})
 }
 
-const deleteTask = (req, res)=>{
+const deleteTask = async (req, res)=>{
+
+    try{
+        
+    } catch{
+
+    }
     
 }
 

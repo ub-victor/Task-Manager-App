@@ -21,7 +21,13 @@ const createTask = async (req, res)=>{
     }
 }
 
-const getTask = (req, res)=>{
+const getTask = async (req, res)=>{
+    try{
+        const { id:taskID} = req.params
+        const task = await Trask.findOne({_id:taskID});
+    } catch{
+
+    }
     res.json({id:req.params.id})
 }
 

@@ -33,7 +33,6 @@ const getTask = async (req, res)=>{
     } catch{
         res.status(500).json({ msg: error})
     }
-    res.json({id:req.params.id})
 }
 
 const updateTask = (req, res)=>{

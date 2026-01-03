@@ -21,9 +21,6 @@ const getTask = asyncWrapper( async (req, res, next) => {
 
     if (!task) {
       return next(createCustomError(`No task with id : ${taskID}`, 404))
-      return res.status(404).json({
-        msg: `No task with id ${taskID}`
-      })
     }
 
     res.status(200).json({ task })

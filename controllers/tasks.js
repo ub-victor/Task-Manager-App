@@ -43,7 +43,11 @@ const getTask = async (req, res) => {
 
 
 const updateTask = async (req, res)=>{
-    
+    try{
+
+    } catch {
+        
+    }
 }
 
 const deleteTask = async (req, res)=>{

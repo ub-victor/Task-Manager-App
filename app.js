@@ -8,10 +8,6 @@ const tasks = require('./routes/tasks');
 app.use(express.static('./public'))
 app.use(express.json());// to parse json data, it allows us to access req.body
 
-//routes
-app.get('/hello',(req, res)=>{
-    res.send('Task Manager App');
-})   
 
 // app.get('/api/v1/tasks') -- get all the tasks
 // app.post('/api/v1/tasks') -- create a new task

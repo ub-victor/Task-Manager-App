@@ -6,15 +6,10 @@ const getAllTasks = asyncWrapper(async (req, res)=>{
         res.status(200).json({tasks})
     });
 
-const createTask = async (req, res)=>{
-    try{
+const createTask = asyncWrapper(async (req, res)=>{
         const task = await Task.create(req.body)
         res.status(201).json({task})
-    } catch(error){
-        res.status(500).json({msg:error})
-
-    }
-}
+});
 
 const getTask = async (req, res) => {
   try {

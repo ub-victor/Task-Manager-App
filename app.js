@@ -1,8 +1,9 @@
 const express = require ('express');
 const app = express();
+const tasks = require('./routes/tasks');
 const connectDB = require('./db/connect');
 require('dotenv').config();
-const tasks = require('./routes/tasks');
+
 
 // midlleware
 app.use(express.static('./public'))

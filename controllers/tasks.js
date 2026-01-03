@@ -45,6 +45,9 @@ const getTask = async (req, res) => {
 const updateTask = async (req, res)=>{
     try{
         const {id:taskID} = req.params;
+        const task = Task.findOneAndUpdate({})
+        res.status(200).json({id:taskID, data:req.body})
+
 
     } catch {
 

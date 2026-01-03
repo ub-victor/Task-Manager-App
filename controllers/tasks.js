@@ -47,7 +47,7 @@ const updateTask = async (req, res)=>{
         const {id:taskID} = req.params;
         const task = await Task.findOneAndUpdate({_id: taskID}, req.body)
         if(!task){
-            return res.status(404).json({msg: `No task with id : ${taskID}`})
+            return res.status(404).json({msg: `No task with id : ${taskID}`},{new:true, runValidators: true})
         }
 
         res.status(200).json({task})

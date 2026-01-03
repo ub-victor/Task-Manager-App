@@ -28,8 +28,7 @@ const getTask = asyncWrapper( async (req, res) => {
 });
 
 
-const updateTask = async (req, res)=>{
-    try{
+const updateTask = asyncWrapper( async (req, res)=>{
         const {id:taskID} = req.params;
         const task = await Task.findOneAndUpdate({_id: taskID}, req.body,{new:true, runValidators: true})
         if(!task){
@@ -38,11 +37,7 @@ const updateTask = async (req, res)=>{
 
         res.status(200).json({task})
 
-
-    } catch(error) {
-        return res.status(500).json({msg: error})
-    }
-}
+});
 
 const deleteTask = async (req, res)=>{
 

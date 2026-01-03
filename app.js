@@ -5,6 +5,7 @@ require('dotenv').config();
 const tasks = require('./routes/tasks');
 
 // midlleware
+app.use(express.static('./public'))
 app.use(express.json());// to parse json data, it allows us to access req.body
 
 //routes

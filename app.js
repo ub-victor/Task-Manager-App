@@ -9,7 +9,7 @@ app.use(express.json());// to parse json data, it allows us to access req.body
 
 //routes
 app.get('/hello',(req, res)=>{
-    res.send('Task Manager App');
+    res.status(200).json({msg:'Hello World'});
 })   
 
 // app.get('/api/v1/tasks') -- get all the tasks

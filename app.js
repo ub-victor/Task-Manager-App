@@ -18,6 +18,7 @@ app.use(express.json());// to parse json data, it allows us to access req.body
 // app.delete('/api/v1/tasks/:id') -- delete task
 
 app.use('/api/v1/tasks', tasks);
+app.use(notFound)
 
 const port = 3000;
 

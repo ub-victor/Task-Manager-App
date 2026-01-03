@@ -57,7 +57,7 @@ const deleteTask = async (req, res)=>{
         res.status(200).json({task})
     } catch (error){
         res.status(500).json({msg:error})
-    } 
+    }
     
 }
 

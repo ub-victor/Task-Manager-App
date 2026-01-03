@@ -43,7 +43,7 @@ const getTask = async (req, res) => {
 
 
 const updateTask = (req, res)=>{
-    res.json({id:req.params.id})
+    
 }
 
 const deleteTask = async (req, res)=>{

@@ -11,7 +11,7 @@ const createTask = asyncWrapper(async (req, res)=>{
         res.status(201).json({task})
 });
 
-const getTask = asyncWrapper( async (req, res) => {
+const getTask = asyncWrapper( async (req, res, next) => {
 
     // const taskID = req.params.id
     const { id: taskID } = req.params
@@ -19,7 +19,7 @@ const getTask = asyncWrapper( async (req, res) => {
     const task = await Task.findById(taskID)
 
     if (!task) {
-        
+
       return res.status(404).json({
         msg: `No task with id ${taskID}`
       })
